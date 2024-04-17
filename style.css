@@ -39,6 +39,7 @@
   --text-color: #6c757d;
   --accent-color: #ffd333;
   --contrast-color: #3d464d;
+  --gray-color: #ccc;
 }
 
 
@@ -141,15 +142,29 @@ ul, li {
 
 .header-middle {
 }
+
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: var(--gray-color);
+}
+
+.cart-buttons {
+}
+
 .header-bottom {
 }
-.main {
-}
-.footer {
-}
+
+
 
 /* Main */
-
+.main {
+}
 
 
 /* Footer */
+.footer {
+}
