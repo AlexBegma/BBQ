@@ -19,6 +19,8 @@
 <body>
 
   <header class="header">
+
+    <!-- .header-top -->
     <div class="header-top py-1">
       <div class="container-fluid">
         <div class="row">
@@ -29,7 +31,12 @@
                 <path
                   d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
               </svg>
-              <a href="tel:+380971234567" class=" d-none d-sm-block">+38 097 12 34 567</a>
+              <a href="tel:+380971234567" class=" d-none d-sm-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone-mobi" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>+38 097 12 34 567</a>
             </div>
           </div>
           <div class="col-sm-4 d-none d-sm-block">
@@ -82,6 +89,8 @@
         </div>
       </div>
     </div>
+
+    <!-- .header-middle -->
     <div class="header-middle bg-white p-2">
       <div class="container-fluid">
         <div class="row align-items-center">
@@ -91,64 +100,295 @@
           <div class="col-md-4 mb-2 mb-md-0">
             <form action="#">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Searching..." aria-label="Searching..." aria-describedby="button-search">
+                <input type="text" class="form-control" placeholder="Searching..." aria-label="Searching..."
+                  aria-describedby="button-search">
                 <button class="btn btn-outline-warning" type="submit" id="button-search">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                   </svg>
                 </button>
               </div>
             </form>
           </div>
-          <div class="col-md-4 cart-buttons text-end">
+          <div class="col-md-4 cart-buttons text-end d-none d-lg-block">
             <a href="#" class="btn btn-warning">
-              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-              </svg> -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+                viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
               </svg>
               <span class="badge text-bg-warning">2</span>
             </a>
-            <button class="btn btn-warning" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+              aria-controls="offcanvasCart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
               </svg>
               <span class="badge text-bg-warning">4</span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <div>
-                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                </div>
-                <div class="dropdown mt-3">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-bottom">
-  
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+          lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
   </header>
 
+  <!-- .header-bottom -->
+  <div class="header-bottom sticky-top">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
 
+        <div class="btn-mobi d-block d-lg-none">
+          <a href="#" class="btn btn-warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+            </svg>
+            <span class="badge text-bg-warning">2</span>
+          </a>
+          <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+            aria-controls="offcanvasCart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <span class="badge text-bg-warning">4</span>
+          </button>
+        </div>
 
-  <main class="main">Main</main>
+      </div>
+    </nav>
+  </div>
+
+  <main class="main">
+    <div class="container-fluid">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem architecto voluptas delectus cumque enim, nobis
+        deleniti repellendus inventore ullam ducimus, laboriosam ut ratione? Maxime, corrupti est magni impedit laborum
+        id.</p>
+      <p>Ullam ad provident maiores officiis, odio voluptatem error. At exercitationem iste cumque neque vero ut
+        eligendi. Voluptate odio assumenda beatae repellendus corrupti placeat impedit, et dicta laborum eaque
+        aspernatur hic.</p>
+      <p>Dolorum accusamus ipsum accusantium molestiae aliquam delectus, libero beatae, rerum, unde voluptate soluta
+        facilis doloribus? Provident officia perferendis quas ex atque eligendi. Neque dolores id fugiat in laborum
+        nobis hic!</p>
+      <p>Minima voluptate porro modi? Impedit, iusto incidunt eaque doloremque mollitia ipsum eligendi, obcaecati
+        aperiam quam aliquam, molestias possimus dolorum eius amet sequi iste. Asperiores officia perspiciatis
+        molestiae. Neque, voluptatem nesciunt.</p>
+      <p>Sequi quaerat rerum voluptatem ad officiis maiores nemo! Quibusdam amet cumque ipsum dignissimos quis illum
+        soluta, facere sed repellat similique reiciendis consectetur, eveniet ipsam harum unde esse magnam earum. Autem.
+      </p>
+      <p>Corrupti perspiciatis nostrum veniam, consequatur pariatur temporibus ipsum, repellendus nobis totam illum modi
+        repellat distinctio explicabo! Error vero consequatur, ducimus quas non, dignissimos fugit ullam maxime officiis
+        modi voluptas eaque!</p>
+      <p>Perspiciatis temporibus atque veritatis expedita accusamus. Omnis cumque praesentium architecto? Nisi eius
+        architecto commodi sapiente laborum illum fuga dicta optio quaerat? Officiis obcaecati corrupti possimus velit
+        aspernatur tempore earum unde.</p>
+      <p>Accusamus eius ea perspiciatis iste laudantium facilis tempore, deleniti, minima ab esse suscipit, voluptates
+        repudiandae fugit itaque nam maiores rem cupiditate deserunt hic! Accusantium, quas vel omnis corporis sint
+        quia.</p>
+      <p>Eaque officiis saepe voluptatem fugiat repellendus laboriosam placeat minima quibusdam architecto labore harum,
+        accusamus nostrum enim esse voluptate corrupti ab consequatur amet atque explicabo voluptas error aperiam autem!
+        Quae, reiciendis.</p>
+      <p>Error eius molestias id neque non minus omnis aspernatur, aliquid repudiandae sequi magnam enim accusamus iste
+        rerum atque dolores vel perferendis placeat libero hic ipsam quisquam rem! Provident, deleniti voluptates.</p>
+      <p>Sit eveniet magnam ipsum fugiat aspernatur facere eius provident nisi eligendi. Neque ex placeat esse, sequi
+        blanditiis nisi temporibus culpa vel eveniet, doloribus quae quaerat exercitationem minus provident consectetur?
+        Fugiat!</p>
+      <p>Voluptates nemo sapiente dolore vel vitae, enim, veniam modi non cupiditate, dolores explicabo mollitia labore.
+        Provident officia voluptas nihil delectus distinctio necessitatibus molestias blanditiis fugiat deleniti. Vero
+        inventore ipsa dolorem?</p>
+      <p>Id repudiandae ab alias vitae, laborum, minus, optio consequuntur deserunt in dolor sed inventore accusamus!
+        Blanditiis commodi, tempora placeat voluptates provident similique non ut vitae animi quos ad maiores! Eos.</p>
+      <p>Rerum nobis laboriosam architecto quasi quis temporibus consequatur optio. Magnam facilis fugit debitis nulla
+        nobis omnis quae tempore rem non accusantium laudantium minima, reiciendis, iste unde blanditiis, voluptatibus
+        architecto commodi?</p>
+      <p>Iusto esse vel aperiam consequuntur, incidunt laudantium nostrum dolor. Qui sed voluptatem quia quo eligendi
+        repudiandae dignissimos ullam excepturi modi reiciendis repellendus, ad, nobis aut labore, fuga dolores rem
+        voluptates.</p>
+      <p>In necessitatibus assumenda quasi eum. Sit sapiente dicta repudiandae reprehenderit repellendus illum quo
+        assumenda hic in molestiae nemo, iusto ex necessitatibus quae harum omnis vitae error dolor quisquam repellat
+        mollitia?</p>
+      <p>Unde, labore officia sit ea repellat maiores ipsum ex velit animi accusamus cum dolorem aspernatur quos
+        deleniti culpa natus, saepe nihil. Enim nisi odit voluptate itaque ut explicabo, eos debitis?</p>
+      <p>Sit ut illum autem labore nam quia quaerat? Nemo animi expedita, modi saepe ut voluptate aperiam cum deleniti!
+        Perferendis, amet debitis quae animi ad quaerat itaque aspernatur sapiente velit nostrum!</p>
+      <p>Exercitationem, qui! Inventore optio, qui iste consequatur accusantium porro omnis fugiat illum sapiente
+        molestiae vitae explicabo temporibus non quos ut vero voluptas odio voluptatum beatae quibusdam laudantium.
+        Obcaecati, iste neque.</p>
+      <p>Optio earum sequi in magni debitis pariatur culpa a voluptatum dolorem? Vero quia illum perspiciatis iusto odit
+        repudiandae delectus, sequi quisquam eos mollitia, architecto, excepturi dicta natus dolorum optio nesciunt.</p>
+      <p>Quod, voluptas fuga, placeat accusamus assumenda, nesciunt voluptate autem illo officiis quae exercitationem
+        reprehenderit sapiente qui atque optio tempora vero accusantium? Aut blanditiis ut, aspernatur nesciunt quasi
+        ipsam esse quisquam.</p>
+      <p>Cumque excepturi tempore totam odit dignissimos error ratione, eos eum vero dicta iusto nesciunt nostrum animi
+        nemo corporis harum aliquam quod? Porro veritatis repellendus similique minima quidem magni alias? Est?</p>
+      <p>Enim, tenetur incidunt provident dolore officiis animi ipsum, voluptates repellendus atque consectetur fuga
+        cumque distinctio deleniti consequuntur aut placeat eveniet sunt assumenda! Expedita totam placeat architecto
+        vel, voluptas sint iste!</p>
+      <p>Reprehenderit possimus officia porro doloribus quisquam nam blanditiis voluptates aliquam accusamus rem? Esse
+        totam expedita aperiam distinctio reprehenderit ad dolorem similique. Quasi quis delectus laborum, eaque
+        perferendis dicta veritatis vitae!</p>
+      <p>Earum tempore illum ipsum dicta enim perferendis cupiditate incidunt eligendi iste. Unde modi enim vero,
+        nostrum fugiat fugit corrupti hic doloribus eaque esse sed eveniet quam, eius quis, atque suscipit!</p>
+      <p>Id omnis accusamus qui, blanditiis assumenda eveniet ipsum illo earum obcaecati dolores, quam nisi pariatur
+        sint illum, nam consectetur ex optio numquam aliquid neque sequi! Quae id accusamus cupiditate corrupti.</p>
+      <p>Id veritatis, alias quos mollitia, modi voluptates quaerat neque explicabo et reiciendis consequatur, aliquid
+        rerum velit nulla ad. Velit omnis perspiciatis ad cumque voluptatem voluptatum tempore deserunt sunt in
+        temporibus.</p>
+      <p>Delectus eos odit, a amet quaerat, doloribus iusto quae nemo veniam distinctio inventore qui optio sunt ipsa
+        excepturi velit! Illum, vero distinctio? Dolores similique quibusdam fugiat inventore architecto at voluptatum!
+      </p>
+      <p>Rerum, provident quibusdam assumenda id, quaerat corporis autem vitae inventore est minima fuga eaque aliquid
+        quis sint officiis asperiores deserunt dolor non sit. Nam, laborum aperiam voluptates mollitia et ratione.</p>
+      <p>Natus aliquam odit voluptate repellat voluptatibus similique minus nobis dignissimos, eum laborum ipsam veniam,
+        cum animi quaerat recusandae expedita! Laborum, asperiores cum! Rerum atque non quidem cum in cumque vero?</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem architecto voluptas delectus cumque enim, nobis
+        deleniti repellendus inventore ullam ducimus, laboriosam ut ratione? Maxime, corrupti est magni impedit laborum
+        id.</p>
+      <p>Ullam ad provident maiores officiis, odio voluptatem error. At exercitationem iste cumque neque vero ut
+        eligendi. Voluptate odio assumenda beatae repellendus corrupti placeat impedit, et dicta laborum eaque
+        aspernatur hic.</p>
+      <p>Dolorum accusamus ipsum accusantium molestiae aliquam delectus, libero beatae, rerum, unde voluptate soluta
+        facilis doloribus? Provident officia perferendis quas ex atque eligendi. Neque dolores id fugiat in laborum
+        nobis hic!</p>
+      <p>Minima voluptate porro modi? Impedit, iusto incidunt eaque doloremque mollitia ipsum eligendi, obcaecati
+        aperiam quam aliquam, molestias possimus dolorum eius amet sequi iste. Asperiores officia perspiciatis
+        molestiae. Neque, voluptatem nesciunt.</p>
+      <p>Sequi quaerat rerum voluptatem ad officiis maiores nemo! Quibusdam amet cumque ipsum dignissimos quis illum
+        soluta, facere sed repellat similique reiciendis consectetur, eveniet ipsam harum unde esse magnam earum. Autem.
+      </p>
+      <p>Corrupti perspiciatis nostrum veniam, consequatur pariatur temporibus ipsum, repellendus nobis totam illum modi
+        repellat distinctio explicabo! Error vero consequatur, ducimus quas non, dignissimos fugit ullam maxime officiis
+        modi voluptas eaque!</p>
+      <p>Perspiciatis temporibus atque veritatis expedita accusamus. Omnis cumque praesentium architecto? Nisi eius
+        architecto commodi sapiente laborum illum fuga dicta optio quaerat? Officiis obcaecati corrupti possimus velit
+        aspernatur tempore earum unde.</p>
+      <p>Accusamus eius ea perspiciatis iste laudantium facilis tempore, deleniti, minima ab esse suscipit, voluptates
+        repudiandae fugit itaque nam maiores rem cupiditate deserunt hic! Accusantium, quas vel omnis corporis sint
+        quia.</p>
+      <p>Eaque officiis saepe voluptatem fugiat repellendus laboriosam placeat minima quibusdam architecto labore harum,
+        accusamus nostrum enim esse voluptate corrupti ab consequatur amet atque explicabo voluptas error aperiam autem!
+        Quae, reiciendis.</p>
+      <p>Error eius molestias id neque non minus omnis aspernatur, aliquid repudiandae sequi magnam enim accusamus iste
+        rerum atque dolores vel perferendis placeat libero hic ipsam quisquam rem! Provident, deleniti voluptates.</p>
+      <p>Sit eveniet magnam ipsum fugiat aspernatur facere eius provident nisi eligendi. Neque ex placeat esse, sequi
+        blanditiis nisi temporibus culpa vel eveniet, doloribus quae quaerat exercitationem minus provident consectetur?
+        Fugiat!</p>
+      <p>Voluptates nemo sapiente dolore vel vitae, enim, veniam modi non cupiditate, dolores explicabo mollitia labore.
+        Provident officia voluptas nihil delectus distinctio necessitatibus molestias blanditiis fugiat deleniti. Vero
+        inventore ipsa dolorem?</p>
+      <p>Id repudiandae ab alias vitae, laborum, minus, optio consequuntur deserunt in dolor sed inventore accusamus!
+        Blanditiis commodi, tempora placeat voluptates provident similique non ut vitae animi quos ad maiores! Eos.</p>
+      <p>Rerum nobis laboriosam architecto quasi quis temporibus consequatur optio. Magnam facilis fugit debitis nulla
+        nobis omnis quae tempore rem non accusantium laudantium minima, reiciendis, iste unde blanditiis, voluptatibus
+        architecto commodi?</p>
+      <p>Iusto esse vel aperiam consequuntur, incidunt laudantium nostrum dolor. Qui sed voluptatem quia quo eligendi
+        repudiandae dignissimos ullam excepturi modi reiciendis repellendus, ad, nobis aut labore, fuga dolores rem
+        voluptates.</p>
+      <p>In necessitatibus assumenda quasi eum. Sit sapiente dicta repudiandae reprehenderit repellendus illum quo
+        assumenda hic in molestiae nemo, iusto ex necessitatibus quae harum omnis vitae error dolor quisquam repellat
+        mollitia?</p>
+      <p>Unde, labore officia sit ea repellat maiores ipsum ex velit animi accusamus cum dolorem aspernatur quos
+        deleniti culpa natus, saepe nihil. Enim nisi odit voluptate itaque ut explicabo, eos debitis?</p>
+      <p>Sit ut illum autem labore nam quia quaerat? Nemo animi expedita, modi saepe ut voluptate aperiam cum deleniti!
+        Perferendis, amet debitis quae animi ad quaerat itaque aspernatur sapiente velit nostrum!</p>
+      <p>Exercitationem, qui! Inventore optio, qui iste consequatur accusantium porro omnis fugiat illum sapiente
+        molestiae vitae explicabo temporibus non quos ut vero voluptas odio voluptatum beatae quibusdam laudantium.
+        Obcaecati, iste neque.</p>
+      <p>Optio earum sequi in magni debitis pariatur culpa a voluptatum dolorem? Vero quia illum perspiciatis iusto odit
+        repudiandae delectus, sequi quisquam eos mollitia, architecto, excepturi dicta natus dolorum optio nesciunt.</p>
+      <p>Quod, voluptas fuga, placeat accusamus assumenda, nesciunt voluptate autem illo officiis quae exercitationem
+        reprehenderit sapiente qui atque optio tempora vero accusantium? Aut blanditiis ut, aspernatur nesciunt quasi
+        ipsam esse quisquam.</p>
+      <p>Cumque excepturi tempore totam odit dignissimos error ratione, eos eum vero dicta iusto nesciunt nostrum animi
+        nemo corporis harum aliquam quod? Porro veritatis repellendus similique minima quidem magni alias? Est?</p>
+      <p>Enim, tenetur incidunt provident dolore officiis animi ipsum, voluptates repellendus atque consectetur fuga
+        cumque distinctio deleniti consequuntur aut placeat eveniet sunt assumenda! Expedita totam placeat architecto
+        vel, voluptas sint iste!</p>
+      <p>Reprehenderit possimus officia porro doloribus quisquam nam blanditiis voluptates aliquam accusamus rem? Esse
+        totam expedita aperiam distinctio reprehenderit ad dolorem similique. Quasi quis delectus laborum, eaque
+        perferendis dicta veritatis vitae!</p>
+      <p>Earum tempore illum ipsum dicta enim perferendis cupiditate incidunt eligendi iste. Unde modi enim vero,
+        nostrum fugiat fugit corrupti hic doloribus eaque esse sed eveniet quam, eius quis, atque suscipit!</p>
+      <p>Id omnis accusamus qui, blanditiis assumenda eveniet ipsum illo earum obcaecati dolores, quam nisi pariatur
+        sint illum, nam consectetur ex optio numquam aliquid neque sequi! Quae id accusamus cupiditate corrupti.</p>
+      <p>Id veritatis, alias quos mollitia, modi voluptates quaerat neque explicabo et reiciendis consequatur, aliquid
+        rerum velit nulla ad. Velit omnis perspiciatis ad cumque voluptatem voluptatum tempore deserunt sunt in
+        temporibus.</p>
+      <p>Delectus eos odit, a amet quaerat, doloribus iusto quae nemo veniam distinctio inventore qui optio sunt ipsa
+        excepturi velit! Illum, vero distinctio? Dolores similique quibusdam fugiat inventore architecto at voluptatum!
+      </p>
+      <p>Rerum, provident quibusdam assumenda id, quaerat corporis autem vitae inventore est minima fuga eaque aliquid
+        quis sint officiis asperiores deserunt dolor non sit. Nam, laborum aperiam voluptates mollitia et ratione.</p>
+      <p>Natus aliquam odit voluptate repellat voluptatibus similique minus nobis dignissimos, eum laborum ipsam veniam,
+        cum animi quaerat recusandae expedita! Laborum, asperiores cum! Rerum atque non quidem cum in cumque vero?</p>
+    </div>
+  </main>
 
 
 

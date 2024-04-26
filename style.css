@@ -93,6 +93,11 @@ ul, li {
 .bi-telephone {
   margin-right: 8px;
 }
+
+.bi-telephone-mobi {
+  display: none;
+}
+
 .social-icons {
   /* display: flex; */
   justify-content: center;
