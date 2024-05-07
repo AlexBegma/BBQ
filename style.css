@@ -40,11 +40,15 @@
   --accent-color: #ffd333;
   --contrast-color: #3d464d;
   --gray-color: #ccc;
+  --light-gray-color: #eee;
+  --red-color: #ee6e73;
+  --green-color: #198754;
 }
 
 
 /* General */
-html, body {
+html,
+body {
   box-sizing: border-box;
   height: 100%;
 }
@@ -66,30 +70,34 @@ img {
   height: auto;
 }
 
-ul, li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 50px 0;
 }
 
 
 /* Header */
 
-.header {
-}
-.header-top {
-}
-.container-fluid {
-}
-.row {
-}
-.col-md-4 {
-}
-.header-top-phone {
+.header {}
 
-}
-.bi {
-}
+.header-top {}
+
+.container-fluid {}
+
+.row {}
+
+.col-md-4 {}
+
+.header-top-phone {}
+
+.bi {}
+
 .bi-telephone {
   margin-right: 8px;
 }
@@ -106,6 +114,7 @@ ul, li {
 .social-icons li {
   margin-right: 10px;
 }
+
 .social-icons-link {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -123,30 +132,29 @@ ul, li {
   color: var(--accent-color);
 }
 
-.bi-facebook {
-}
-.bi-youtube {
-}
-.bi-instagram {
-}
-.btn-group {
-}
-.dropdown {
-}
+.bi-facebook {}
+
+.bi-youtube {}
+
+.bi-instagram {}
+
+.btn-group {}
+
+.dropdown {}
+
 .btn {
   /* --bs-btn-padding-y: .2rem; --bs-btn-padding-x: .4rem; --bs-btn-font-size: .65rem; */
 }
-.btn-secondary {
-}
-.dropdown-toggle {
-}
-.dropdown-menu {
-}
-.dropdown-item {
-}
 
-.header-middle {
-}
+.btn-secondary {}
+
+.dropdown-toggle {}
+
+.dropdown-menu {}
+
+.dropdown-item {}
+
+.header-middle {}
 
 .form-control:focus {
   border-color: var(--accent-color);
@@ -157,19 +165,182 @@ ul, li {
   color: var(--gray-color);
 }
 
-.cart-buttons {
-}
+.cart-buttons {}
 
-.header-bottom {
-}
-
+.header-bottom {}
 
 
 /* Main */
-.main {
+.main {}
+
+
+/* main-advanages */
+.advantages {}
+
+.section-title {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--contrast-color);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.section-title span {
+background-color: var(--bg-color);
+padding: 0 1rem;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 50%;
+  left: 0;
+  border-top: 1px dashed var(--text-color);
+  z-index: -1;
+}
+
+@media all and (max-width: 390px) {
+  .section-title::after {
+    display: none;
+  }
+}
+
+.advantages__items {}
+
+.advantages__item {
+  padding: 12px;
+  background-color: #fff;
+}
+
+.advantages__item:hover {
+box-shadow: 0 15px 30px -20px rgba(0, 0, 0, .5)
+}
+
+.advantages__icon {
+  font-weight: 700;
+  color: #ffd333;
+  padding-right: 18px;
+}
+
+/* main-featured-products */
+.featured-products {
+
+}
+
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid var(--gray-color);
+  transition: all .3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 20px -15px rgba(0, 0, 0, .75);
+}
+
+.product-card-offer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.product-card-offer>div {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .8px;
+  border-radius: 50%;
+}
+
+.offer-hit {
+background-color: var(--red-color);
+margin-bottom: 3px;
+}
+
+.offer-new {
+  background-color: var(--accent-color);
+}
+
+.product-thumb {}
+
+.product-details {
+  padding: 10px 20px;
+}
+
+.product-details h4 a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 60px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.product-details h4 a:hover {
+  color: var(--green-color);
+}
+
+.product-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 72px;
+  overflow: hidden;
+}
+
+.product-bottom-details {
+border-top: 1px solid var(--light-gray-color);
+padding-top: 1rem;
+}
+
+.prdouct-price {
+font-size: 18px;
+color: var(--red-color);
+font-weight: 600;
+}
+
+.prdouct-price small {
+  color: var(--text-color);
+  text-decoration: line-through;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+.product-links {
+
+}
+
+.about-us {
+
 }
 
 
 /* Footer */
 .footer {
+  background-color: var(--bg-color);
+}
+
+footer h4 {
+
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer-social-icons li {
+  margin-right: 10px;
+}
+
+.list-unstyled {
+  
 }
